@@ -1,5 +1,7 @@
 function isWordAPalindrome(input) {
+  
 }
+
 
 console.log(isWordAPalindrome("Hannah"));
 console.log(isWordAPalindrome("racecar"));
