@@ -1,7 +1,15 @@
+let uniqueArray = []
+var arr1 = [7,7,8,1,14,2,2,-5,6,0];
+
 function findDupsInArray(arr) {
+  for(var i = 0; i < arr.length; i ++) {
+    if(uniqueArray.indexOf(arr[i])=== -1) {
+      uniqueArray.push(arr[i])
+    }
+  }
+  return uniqueArray
+
 }
 
-var arr1 = [7,7,8,1,14,2,2,-5,6,0];
-var arr2 = [-9,8,7,3,4,4,-1,-1,7];
-console.log(removeDupsInArray(arr1));
-console.log(removeDupsInArray(arr2));
+
+findDupsInArray(arr1)
